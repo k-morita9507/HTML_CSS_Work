@@ -1,4 +1,379 @@
-p {
-  color: red; }
+/* line 1, ../../src/scss/components/common/_header.scss */
+.header {
+  color: #000;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNFLFdBQVcsRUFDWiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBjaGFyc2V0ICd1dGYtOCc7XG5cbnAge1xuICBjb2xvcjogcmVkO1xufVxuIl19 */
+/*! sanitize.css v3.2.0 | CC0 1.0 Public Domain | github.com/10up/sanitize.css */
+/*
+ * Normalization
+ */
+/* line 9, ../../src/scss/base/lib/_sanitize.scss */
+audio:not([controls]) {
+  display: none;
+  /* Chrome 44-, iOS 8+, Safari 9+ */
+}
+
+/* line 13, ../../src/scss/base/lib/_sanitize.scss */
+button {
+  -webkit-appearance: button;
+  /* iOS 8+ */
+  overflow: visible;
+  /* Internet Explorer 11- */
+}
+
+/* line 18, ../../src/scss/base/lib/_sanitize.scss */
+details {
+  display: block;
+  /* Edge 12+, Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+/* line 22, ../../src/scss/base/lib/_sanitize.scss */
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* Edge 12+, Internet Explorer 11- */
+  overflow-y: scroll;
+  /* All browsers without overlaying scrollbars */
+  -webkit-text-size-adjust: 100%;
+  /* iOS 8+ */
+}
+
+/* line 28, ../../src/scss/base/lib/_sanitize.scss */
+input {
+  -webkit-border-radius: 0;
+}
+
+/* line 32, ../../src/scss/base/lib/_sanitize.scss */
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* iOS 8+ */
+}
+
+/* line 38, ../../src/scss/base/lib/_sanitize.scss */
+input[type="number"] {
+  width: auto;
+  /* Firefox 36+ */
+}
+
+/* line 42, ../../src/scss/base/lib/_sanitize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Chrome 45+, Safari 9+ */
+}
+
+/* line 46, ../../src/scss/base/lib/_sanitize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  /* Chrome 45+, Safari 9+ */
+}
+
+/* line 51, ../../src/scss/base/lib/_sanitize.scss */
+main {
+  display: block;
+  /* Android 4.3-, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+/* line 55, ../../src/scss/base/lib/_sanitize.scss */
+pre {
+  overflow: auto;
+  /* Internet Explorer 11- */
+}
+
+/* line 59, ../../src/scss/base/lib/_sanitize.scss */
+progress {
+  display: inline-block;
+  /* Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+/* line 63, ../../src/scss/base/lib/_sanitize.scss */
+small {
+  font-size: 75%;
+  /* All browsers */
+}
+
+/* line 67, ../../src/scss/base/lib/_sanitize.scss */
+summary {
+  display: block;
+  /* Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+/* line 71, ../../src/scss/base/lib/_sanitize.scss */
+svg:not(:root) {
+  overflow: hidden;
+  /* Internet Explorer 11- */
+}
+
+/* line 75, ../../src/scss/base/lib/_sanitize.scss */
+template {
+  display: none;
+  /* Android 4.3-, Internet Explorer 11-, iOS 7-, Safari 7-, Windows Phone 8.1+ */
+}
+
+/* line 79, ../../src/scss/base/lib/_sanitize.scss */
+textarea {
+  overflow: auto;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+/* line 83, ../../src/scss/base/lib/_sanitize.scss */
+[hidden] {
+  display: none;
+  /* Internet Explorer 10- */
+}
+
+/*
+ * Universal inheritance
+ */
+/* line 91, ../../src/scss/base/lib/_sanitize.scss */
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+/* line 97, ../../src/scss/base/lib/_sanitize.scss */
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 102, ../../src/scss/base/lib/_sanitize.scss */
+:before,
+:after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/*
+ * Opinionated defaults
+ */
+/* specify the border style and width of all elements */
+/* line 116, ../../src/scss/base/lib/_sanitize.scss */
+*,
+:before,
+:after {
+  border-style: solid;
+  border-width: 0;
+}
+
+/* specify the core styles of all elements */
+/* line 125, ../../src/scss/base/lib/_sanitize.scss */
+* {
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* specify the root styles of the document */
+/* line 133, ../../src/scss/base/lib/_sanitize.scss */
+:root {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: default;
+  font: 100%/1.5 sans-serif;
+}
+
+/* specify the text decoration of anchors */
+/* line 143, ../../src/scss/base/lib/_sanitize.scss */
+a {
+  text-decoration: none;
+}
+
+/* specify the alignment of media elements */
+/* line 149, ../../src/scss/base/lib/_sanitize.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* specify the background color of form elements */
+/* line 160, ../../src/scss/base/lib/_sanitize.scss */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+}
+
+/* specify the inherited color and font of form elements */
+/* line 169, ../../src/scss/base/lib/_sanitize.scss */
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* specify the minimum height of form elements */
+/* line 181, ../../src/scss/base/lib/_sanitize.scss */
+button,
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+  min-height: 1.5em;
+}
+
+/* specify the font family of code elements */
+/* line 205, ../../src/scss/base/lib/_sanitize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+/* specify the list style of nav lists */
+/* line 214, ../../src/scss/base/lib/_sanitize.scss */
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+/* specify the standard appearance of selects */
+/* line 221, ../../src/scss/base/lib/_sanitize.scss */
+select {
+  -moz-appearance: none;
+  /* Firefox 40+ */
+  -webkit-appearance: none;
+}
+
+/* line 226, ../../src/scss/base/lib/_sanitize.scss */
+select::-ms-expand {
+  display: none;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+/* line 230, ../../src/scss/base/lib/_sanitize.scss */
+select::-ms-value {
+  color: currentColor;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+/* specify the border styling of tables */
+/* line 236, ../../src/scss/base/lib/_sanitize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* specify the resizability of textareas */
+/* line 243, ../../src/scss/base/lib/_sanitize.scss */
+textarea {
+  resize: vertical;
+}
+
+/* specify the background color, font color, and drop shadow of text selections */
+/* line 249, ../../src/scss/base/lib/_sanitize.scss */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* required when declaring ::selection */
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/* line 255, ../../src/scss/base/lib/_sanitize.scss */
+::selection {
+  background-color: #b3d4fc;
+  /* required when declaring ::selection */
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/* specify the progress cursor of updating elements */
+/* line 263, ../../src/scss/base/lib/_sanitize.scss */
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* specify the pointer cursor of trigger elements */
+/* line 269, ../../src/scss/base/lib/_sanitize.scss */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+/* line 275, ../../src/scss/base/lib/_sanitize.scss */
+[aria-disabled] {
+  cursor: default;
+}
+
+/* specify the style of visually hidden yet accessible elements */
+/* line 281, ../../src/scss/base/lib/_sanitize.scss */
+[hidden][aria-hidden="false"] {
+  clip: rect(0 0 0 0);
+  display: inherit;
+  position: absolute;
+}
+
+/* line 287, ../../src/scss/base/lib/_sanitize.scss */
+[hidden][aria-hidden="false"]:focus {
+  clip: auto;
+}
+
+/* remove delay from tapping on clickable elements */
+/* line 293, ../../src/scss/base/lib/_sanitize.scss */
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/*# sourceMappingURL=sanitize.css.map */
+/* line 3, ../../src/scss/base/_reset.scss */
+:root, html, body {
+  background-color: #fbf7f3;
+  color: #474747;
+  width: 100%;
+}
+
+/* line 9, ../../src/scss/base/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, ../../src/scss/base/_reset.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 17, ../../src/scss/base/_reset.scss */
+a {
+  color: #474747;
+}
+
+/* line 21, ../../src/scss/base/_reset.scss */
+a:hover {
+  text-decoration: none;
+  color: #878378;
+}
