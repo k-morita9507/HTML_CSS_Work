@@ -3,6 +3,23 @@
   color: #000;
 }
 
+/* line 5, ../../src/scss/components/common/_header.scss */
+.Header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 98px;
+}
+/* line 10, ../../src/scss/components/common/_header.scss */
+.Header__head {
+  flex: 1 1 auto;
+  text-align: center;
+}
+/* line 14, ../../src/scss/components/common/_header.scss */
+.Header__body {
+  flex: 3 1 auto;
+}
+
 /*! sanitize.css v3.2.0 | CC0 1.0 Public Domain | github.com/10up/sanitize.css */
 /*
  * Normalization
@@ -376,4 +393,16 @@ a {
 a:hover {
   text-decoration: none;
   color: #878378;
+}
+
+/* line 3, ../../src/scss/components/common/_menu.scss */
+.Menu {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 6, ../../src/scss/components/common/_menu.scss */
+.Menu__item {
+  display: block;
+  padding: 10px 15px;
+  text-transform: uppercase;
 }
