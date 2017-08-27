@@ -1,1 +1,18 @@
 @charset "UTF-8";
+
+.EntryPanel {
+  display: flex;
+  align-items: center;
+  &__main {
+    display: flex;
+    flex: 1 1 55%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 20px 0;
+  }
+  &__head {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

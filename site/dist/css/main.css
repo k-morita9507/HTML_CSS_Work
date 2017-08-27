@@ -406,3 +406,23 @@ a:hover {
   padding: 10px 15px;
   text-transform: uppercase;
 }
+
+/* line 3, ../../src/scss/components/_entryPanel.scss */
+.EntryPanel {
+  display: flex;
+  align-items: center;
+}
+/* line 6, ../../src/scss/components/_entryPanel.scss */
+.EntryPanel__main {
+  display: flex;
+  flex: 1 1 55%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  padding: 20px 0;
+}
+/* line 14, ../../src/scss/components/_entryPanel.scss */
+.EntryPanel__head {
+  font-weight: bold;
+  font-size: 16px;
+}
